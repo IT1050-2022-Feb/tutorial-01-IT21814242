@@ -12,7 +12,19 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
+int main(void)
+{
+  int num, i, sum = 0; //variable declarations
+
+  printf("Enter an integer value : "); //prompt user to input
+  scanf("%d", &num);
+
+  for(i = 1; i <= num; i++)
+  {
+    sum = sum + i;
+  }
+
+  printf("Sum of the selected range is %d", sum); //printing output
   
   return 0;
 }
